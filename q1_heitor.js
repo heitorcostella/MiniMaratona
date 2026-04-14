@@ -1,4 +1,5 @@
 function solucao() {
+    var vetor = [];
     var numero = parseInt(document.getElementById('numero').value); 
          if( numero%3 === 0 & numero%5 === 0){ 
       alert("FizzBuzz");
