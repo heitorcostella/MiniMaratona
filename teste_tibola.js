@@ -13,7 +13,9 @@ return vetorAuxiliar
 
 }
 */
-function teste(){
+
+
+/*function teste(){
     let txt = document.querySelector('.inp').value
 
 
@@ -36,10 +38,40 @@ for (let i = 0; i < pao.length; i++) {
     
 }
 alert(`Total: ${txt.length} \n
-    Maior: ${palavra.length} \n
-    Menor: ${menor.length}`)
+    Maior: ${palavra} \n
+    Menor: ${menor}`)
+}*/
+
+
+let vetor = [];
+function final(n){
+
+    vetor = n
+
+let dia = n[0];
+let venda = 0;
+
+for (let i = 0; i < vetor.length; i++) {
+    if(vetor[i] > venda){
+        venda = vetor[i]
+    }
+
+    if(dia < vetor[i]){
+        dia = vetor[i]
+    }
+    
 }
 
+let valor = venda - dia
+
+if(valor === 0){
+    return `Sem lucro`
+}
+
+console.log(valor)
+
+}
+final([1,2,3])
 
     
 
