@@ -44,34 +44,36 @@ alert(`Total: ${txt.length} \n
 
 
 let vetor = [];
-function final(n){
+function final(valores){
 
-    vetor = n
+    vetor = valores
 
-let dia = n[0];
-let venda = 0;
+let menorValor = valores[0];
+let maiorValor = 0;
 
-for (let i = 0; i < vetor.length; i++) {
-    if(vetor[i] > venda){
-        venda = vetor[i]
+for (let i = 1; i < valores.length; i++) {
+
+let lucro = valores[i] - menorValor
+
+    if(lucro > maiorValor){
+        maiorValor = lucro
     }
 
-    if(dia < vetor[i]){
-        dia = vetor[i]
+    if(valores[i] < menorValor){
+        menorValor = valores[i]
     }
-    
+   
 }
 
-let valor = venda - dia
 
-if(valor === 0){
-    return `Sem lucro`
+console.log(maiorValor)
+
+
+
+
+
 }
-
-console.log(valor)
-
-}
-final([1,2,3])
+final([5,4,3,2,1])
 
     
 
