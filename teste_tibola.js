@@ -13,21 +13,33 @@ return vetorAuxiliar
 
 }
 */
-let arr = [];
 function teste(){
     let txt = document.querySelector('.inp').value
 
-arr.push(txt)
 
-    const palavras = txt.split(" ")
+let pao = txt.trim().split(" ");
 
-    const letras = txt.split("")
 
-    alert(`Total de palavras: ${palavras} \n
-        Mais letras: ${letras.}`)
 
-        for (let i = 0; i < arr.length; i++) {
-            
-            
-        }
+let palavra = "";
+let menor = pao[0];
+for (let i = 0; i < pao.length; i++) {
+
+    if(pao[i].length > palavra.length){
+        palavra = pao[i]
+    }
+
+    if(pao[i].length < palavra.length){
+        menor = pao[i]
+    }
+
+    
 }
+alert(`Total: ${txt.length} \n
+    Maior: ${palavra.length} \n
+    Menor: ${menor.length}`)
+}
+
+
+    
+
