@@ -42,7 +42,7 @@ alert(`Total: ${txt.length} \n
     Menor: ${menor}`)
 }*/
 
-
+/*
 let vetor = [];
 function final(valores){
 
@@ -77,3 +77,28 @@ final([5,4,3,2,1])
 
     
 
+*/
+
+/*
+let vetor = [];
+function aaa(n){
+
+for (let i = 1; i <= n; i++) {
+if(i % 3 === 0 && i % 5 === 0){
+    vetor.push(`FizzBuzz`)    
+}
+else if(i % 3 === 0){
+    vetor.push(`Fizz`)
+}else if(i % 5 === 0){
+    vetor.push(`Buzz`)
+}else if(i % 7 === 0){
+    vetor.push(`Boom`)
+}else{
+    vetor.push(i)
+}
+
+
+}
+return vetor
+}
+console.log(aaa(15))*/
