@@ -1,3 +1,5 @@
+let resultado = "Olá, mundo!";
+document.getElementById("saida").innerHTML = resultado;
 function executar() {
 let valor = document.getElementById("campo").value;
 
@@ -9,5 +11,4 @@ if (valor==texto_inverso){
     resultado = true
 }else{
     resultado = false
-
-}alert(resultado)} 
+} alert(resultado)}
