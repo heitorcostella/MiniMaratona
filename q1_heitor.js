@@ -1,17 +1,25 @@
 function solucao() {
-    var vetor = [];
-    var numero = parseInt(document.getElementById('numero').value); 
-         if( numero%3 === 0 & numero%5 === 0){ 
-      alert("FizzBuzz");
-      return;
+      let vetor = [];
+      let n = parseInt(document.getElementById('numero').value)
+      for (let i = 1; i <= n; i++) {
+            vetor.push(i);
+      }
+      for (let i = 0; i < vetor.length; i++) {
+            if ( vetor[i] % 3 === 0 && vetor[i] % 5 === 0) {
+                  vetor[i] = "FizzBuzz";
+            } 
+            else if (vetor[i] % 3 === 0) {
+                  vetor[i] = "Fizz";
+            } 
+            else if (vetor[i] % 5 === 0) {
+                  vetor[i] = "Buzz";
+            } 
+            else if (vetor[i] % 7 === 0) {
+                  vetor[i] = "Boom";
+            }
+      }
+      alert(vetor);
 }
-     if( numero%3 === 0){ 
-      alert("Fizz");
-}
-     if( numero%5 === 0){ 
-      alert("Buzz");
-}
-     if( numero%7 === 0){ 
-      alert("Boom");
-}
-}
+  
+
+
