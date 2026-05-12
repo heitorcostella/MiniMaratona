@@ -20,6 +20,27 @@ function solucao() {
       }
       alert(vetor);
 }
-  
-
-
+function contra(){
+      let str = document.getElementById('str').value;
+      let inicio = 0;
+      let final = str.length - 1;
+      let vetsaida = [];
+      for(let i = final; i >= inicio; i--){
+            vetsaida.push(str[i]);
+      }
+      alert(vetsaida);
+}
+function contra2(){
+      let str = Array.from(document.getElementById('str').value);
+      let inicio = 0;
+      let final = str.length - 1;
+      let vetsaida = [];
+      while(inicio < final){
+            let temp = str[inicio];
+            str[inicio] = str[final];
+            str[final] = temp;
+            inicio++;
+            final--;
+      }
+      alert(str);
+}
