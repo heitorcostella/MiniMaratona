@@ -44,3 +44,6 @@ function contra2(){
       }
       alert(str);
 }
+function questao3(){
+      
+}
