@@ -1,4 +1,4 @@
-function solucao() {
+function questao1() {
       let vetor = [];
       let n = parseInt(document.getElementById('numero').value)
       for (let i = 1; i <= n; i++) {
@@ -20,7 +20,7 @@ function solucao() {
       }
       alert(vetor);
 }
-function contra(){
+function questao3(){
       let str = document.getElementById('str').value;
       let inicio = 0;
       let final = str.length - 1;
@@ -30,20 +30,20 @@ function contra(){
       }
       alert(vetsaida);
 }
-function contra2(){
-      let str = Array.from(document.getElementById('str').value);
-      let inicio = 0;
-      let final = str.length - 1;
-      let vetsaida = [];
-      while(inicio < final){
-            let temp = str[inicio];
-            str[inicio] = str[final];
-            str[final] = temp;
-            inicio++;
-            final--;
+function questao6(vetor){
+     let numero = parseInt(document.getElementById('botao').value);
+      let resultado = [];
+      for(let i = 0; i < vetor.length; i++){
+            let existe = false;
+
+            for(let h = 0; h < resultado.length; h++){
+                  if(vetor[i] == resultado[h]){
+                        existe = true;
+                  }
+            }
+            if (existe == false) {
+                  resultado.push(vetor[i]);
+            }
       }
-      alert(str);
-}
-function questao3(){
-      
+      alert("resultado");
 }
